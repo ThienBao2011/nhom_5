@@ -7,9 +7,11 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float jumpSpeed = 5f;
     private Rigidbody2D _rigidbody2D;
     Vector2 moveInput;
     private Animator _animator;
+    CapsuleCollider2D _capsuleCollider2D;
 
 
     // Start is called before the first frame update
@@ -17,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _capsuleCollider2D = GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
@@ -37,9 +40,16 @@ public class PlayerMovement : MonoBehaviour
         // (0, -1) -> Down
     }
 
-    void OnJump()
+    void OnJump(InputValue value)
     {
-        Debug.Log(">>>>> Jump");
+        var isTouchingGround = _capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        if (!isTouchingGround) return;
+        if (value.isPressed)
+        {
+            Debug.Log(">>>>> Jump");
+            _rigidbody2D.velocity += new Vector2(x: 0, y: jumpSpeed);
+        }
+        
     }
 
     // Dieu khien chuyen dong cua nv
