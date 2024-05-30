@@ -45,5 +45,11 @@ TagManager:
     uniqueID: 1982073849
     locked: 0
   - name: Map
+    uniqueID: 283107657
+    locked: 0
+  - name: do_vat
+    uniqueID: 1936364171
+    locked: 0
+  - name: Player
     uniqueID: 99074059
     locked: 0
