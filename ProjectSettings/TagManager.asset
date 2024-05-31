@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - Climbing
   - 
   - 
   - 
@@ -47,7 +47,7 @@ TagManager:
   - name: Map
     uniqueID: 283107657
     locked: 0
-  - name: do_vat
+  - name: Climbing
     uniqueID: 1936364171
     locked: 0
   - name: Player
