@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isAlive;
 
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +71,31 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void OnFire(InputValue value)
+    {
+        if (!isAlive)
+        {
+            return;
+        }
+
+        Debug.Log(">>>>> Fire");
+        //tao ra vien dan tai vi tri sung
+        var oneBullet = Instantiate(bullet, gun.position, transform.rotation);
+        // cung cap velovity cho vien dan tuy theo huong cua nhan vat
+        //neu cung cap dan huong ve ben trai thi vien dan bay ve ben trai
+        if(transform.localScale.x < 0)
+        {
+            oneBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(-15, 0);
+            return;
+        }
+        else
+        {
+            oneBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(15, 0);
+        }
+        //huy vien dan sau 2s
+        Destroy(oneBullet, 2);
+    }
+
     // Dieu khien chuyen dong cua nv
     void Run()
     {
@@ -115,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        var isTouchingEnemy =_capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy"));
+        var isTouchingEnemy =_capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy", "Trap"));
         if (isTouchingEnemy)
         {
             isAlive = false;
