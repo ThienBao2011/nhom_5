@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D _capsuleCollider2D;
     private float gravityScaleAtStart;
 
+    private bool isAlive;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         _animator = GetComponent<Animator>();
         _capsuleCollider2D = GetComponent<CapsuleCollider2D>();
         gravityScaleAtStart = _rigidbody2D.gravityScale;
+        isAlive = true;
     }
 
     // Update is called once per frame
@@ -32,10 +34,15 @@ public class PlayerMovement : MonoBehaviour
         Run();
         FlipSprite();
         ClimbLadder();
-
+        Die();
     }
     void OnMove(InputValue value)
     {
+        if (!isAlive)
+        {
+            return;
+        }
+
         moveInput = value.Get<Vector2>();
         Debug.Log(">>>>> Move Input: " +  moveInput);
         // moveInput
@@ -54,7 +61,11 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log(">>>>> Jump");
             _rigidbody2D.velocity += new Vector2(0, jumpSpeed);
         }
-        
+        if (!isAlive)
+        {
+            return;
+        }
+
     }
 
     // Dieu khien chuyen dong cua nv
@@ -100,5 +111,16 @@ public class PlayerMovement : MonoBehaviour
         _animator.SetBool("isClimbing", playerHasVerticalSpeed);
         //Tat gravity khi leo thang
         _rigidbody2D.gravityScale = 0;
+    }
+
+    void Die()
+    {
+        var isTouchingEnemy =_capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy"));
+        if (isTouchingEnemy)
+        {
+            isAlive = false;
+            _animator.SetTrigger("Dying");
+            _rigidbody2D.velocity = new Vector2(0, 0);
+        }
     }
 }
