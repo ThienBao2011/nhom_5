@@ -13,6 +13,10 @@ public class PlayerMove : MonoBehaviour
     Animator ani;
     BoxCollider2D box2d;
     private float gravity;
+    private bool isAlive;
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
+    [SerializeField] float bulletSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +24,7 @@ public class PlayerMove : MonoBehaviour
         ani = GetComponent<Animator>();
         box2d = GetComponent<BoxCollider2D>();
         gravity = rb.gravityScale;
+        isAlive = true;
     }
 
     // Update is called once per frame
@@ -28,21 +33,47 @@ public class PlayerMove : MonoBehaviour
         Run();
         Flip();
         Climladder();
+        Die();
     }
     
     void OnMove(InputValue value)
     {
+        if (!isAlive)
+        {
+            return;
+        }
         moveInput = value.Get<Vector2>();
 
     }
     void OnJump(InputValue value)
     {
+        if (!isAlive)
+        {
+            return;
+        }
         var isTouchingGround = box2d.IsTouchingLayers(LayerMask.GetMask("Ground"));
         if (!isTouchingGround) return;
         if (value.isPressed)
         {
             rb.velocity += new Vector2(0, jumpSpeed);
         }
+    }
+    void OnFire(InputValue value)
+    {
+        if (!isAlive)
+        {
+            return;
+        }
+        var oneBullet = Instantiate(bullet, gun.position, transform.rotation);
+        if (transform.localScale.x < 0)
+        {
+            oneBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(-bulletSpeed, 0);
+        }
+        else 
+        {
+            oneBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed, 0);
+        }
+        Destroy(oneBullet, 2);
     }
     void Run()
     {
@@ -73,5 +104,15 @@ public class PlayerMove : MonoBehaviour
         var animation_climb = Mathf.Abs(moveInput.y) > Mathf.Epsilon;
         ani.SetBool("isClimbing", animation_climb);
         rb.gravityScale = 0;
+    }
+    void Die()
+    {
+        var isTouchingEnemy = box2d.IsTouchingLayers(LayerMask.GetMask("Enemy", "Trap"));
+        if (isTouchingEnemy)
+        {
+            isAlive = false;
+            ani.SetTrigger("Dying");
+            rb.velocity = new Vector2(0, 0);
+        }
     }
 }

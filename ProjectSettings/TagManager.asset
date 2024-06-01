@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - gioi_han
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - Player
   - Background
   - Enemy
-  - 
-  - 
+  - Trap
+  - Bullet
   - 
   - 
   - 
@@ -56,6 +57,12 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 1838952809
+    locked: 0
+  - name: Trap
+    uniqueID: 3787000731
+    locked: 0
+  - name: Bullet
+    uniqueID: 2435775187
     locked: 0
   - name: Player
     uniqueID: 99074059
