@@ -20,7 +20,7 @@ TagManager:
   - Trap
   - Bullet
   - Interactable
-  - 
+  - Items
   - 
   - 
   - 
@@ -45,6 +45,9 @@ TagManager:
   - name: Bg
     uniqueID: 3316384907
     locked: 0
+  - name: Water
+    uniqueID: 1223503019
+    locked: 0
   - name: Platform
     uniqueID: 4175639445
     locked: 0
@@ -62,6 +65,9 @@ TagManager:
     locked: 0
   - name: Interactable
     uniqueID: 195940493
+    locked: 0
+  - name: Items
+    uniqueID: 3998268733
     locked: 0
   - name: Player
     uniqueID: 4116878821
