@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -10,6 +11,20 @@ public class GameController : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI liveText;
+
+    private void Awake()
+    {
+        var numGameSessions = FindObjectsOfType<GameController>().Length;
+        if (numGameSessions > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+       
+    }
 
 
     // Start is called before the first frame update
@@ -32,4 +47,30 @@ public class GameController : MonoBehaviour
     {
         
     }
+
+    private void DecreseLive()
+    {
+        live--;
+        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+        liveText.text = live.ToString();
+    }
+
+    private void ResetGame()
+    {
+        SceneManager.LoadScene(0);
+        Destroy(gameObject);
+    }
+
+    public void ProcessPlayerDeath()
+    {
+        if (live > 1)
+        {
+            DecreseLive();
+        }
+        else
+        {
+            ResetGame();
+        }
+    }    
 }
