@@ -149,6 +149,8 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             _animator.SetTrigger("Dying");
             _rigidbody2D.velocity = new Vector2(0, 0);
+            //Xu li Dies
+            FindObjectOfType<GameController>().ProcessPlayerDeath();
         }
     }
 }
