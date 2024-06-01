@@ -21,7 +21,7 @@ TagManager:
   - Bullet
   - Interactable
   - Items
-  - 
+  - NPC
   - 
   - 
   - 
@@ -68,6 +68,9 @@ TagManager:
     locked: 0
   - name: Items
     uniqueID: 3998268733
+    locked: 0
+  - name: NPC
+    uniqueID: 729549919
     locked: 0
   - name: Player
     uniqueID: 4116878821

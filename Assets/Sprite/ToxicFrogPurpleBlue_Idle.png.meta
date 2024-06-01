@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2cf4dd280fd1d0846ad2676987e4da31
+guid: e1bfa98a48062c444b7d1a263213e1f9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ToxicFrogGreenBlue_Idle_0
+      name: ToxicFrogPurpleBlue_Idle_0
       rect:
         serializedVersion: 2
         x: 11
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 824dad4dddf97c942a814744e6732c3f
-      internalID: 1092296889
+      spriteID: 14fe14154052a1540970f6eedf886da8
+      internalID: -1680654436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBlue_Idle_1
+      name: ToxicFrogPurpleBlue_Idle_1
       rect:
         serializedVersion: 2
         x: 59
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc86c5e2a8ddb344db6fb1567e0073f4
-      internalID: 1986302997
+      spriteID: 605b023c749013c4f9c5f2114083c61a
+      internalID: -317848474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBlue_Idle_2
+      name: ToxicFrogPurpleBlue_Idle_2
       rect:
         serializedVersion: 2
         x: 107
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b302e79c86eac64abcc8693b263c302
-      internalID: -1187049651
+      spriteID: 193ee46bfe0240d44b27f8508eac5e5a
+      internalID: -1930823474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBlue_Idle_3
+      name: ToxicFrogPurpleBlue_Idle_3
       rect:
         serializedVersion: 2
         x: 155
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d913dd89559d9c4db2745357db4f02f
-      internalID: -1628339705
+      spriteID: e6ae9799c0459994687e3f689d8c9dfd
+      internalID: 1351927709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBlue_Idle_4
+      name: ToxicFrogPurpleBlue_Idle_4
       rect:
         serializedVersion: 2
         x: 203
@@ -234,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bc334a9b383f084e84202c45f53c5fe
-      internalID: 483048054
+      spriteID: 25d57661ec5a42040ab36d61387282cb
+      internalID: 970562087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBlue_Idle_5
+      name: ToxicFrogPurpleBlue_Idle_5
       rect:
         serializedVersion: 2
         x: 251
@@ -255,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a3df89b79cafaf4380db62eca88a6da
-      internalID: 1876576401
+      spriteID: 71b7fd6c2fee90c4d85ebdecdb529245
+      internalID: 47586389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBlue_Idle_6
+      name: ToxicFrogPurpleBlue_Idle_6
       rect:
         serializedVersion: 2
         x: 299
@@ -276,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 749505c582085d649a518bcd22324123
-      internalID: 1624252036
+      spriteID: 0778927dadcad2f419905d85feec272a
+      internalID: -679806152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBlue_Idle_7
+      name: ToxicFrogPurpleBlue_Idle_7
       rect:
         serializedVersion: 2
         x: 347
@@ -297,8 +297,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09f353f62c150af42a2c5f6d5a39fe05
-      internalID: -897558899
+      spriteID: bda7b188f2397314ea68c5bdc55d804f
+      internalID: 2067975322
       vertices: []
       indices: 
       edges: []
@@ -314,14 +314,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ToxicFrogGreenBlue_Idle_0: 1092296889
-      ToxicFrogGreenBlue_Idle_1: 1986302997
-      ToxicFrogGreenBlue_Idle_2: -1187049651
-      ToxicFrogGreenBlue_Idle_3: -1628339705
-      ToxicFrogGreenBlue_Idle_4: 483048054
-      ToxicFrogGreenBlue_Idle_5: 1876576401
-      ToxicFrogGreenBlue_Idle_6: 1624252036
-      ToxicFrogGreenBlue_Idle_7: -897558899
+      ToxicFrogPurpleBlue_Idle_0: -1680654436
+      ToxicFrogPurpleBlue_Idle_1: -317848474
+      ToxicFrogPurpleBlue_Idle_2: -1930823474
+      ToxicFrogPurpleBlue_Idle_3: 1351927709
+      ToxicFrogPurpleBlue_Idle_4: 970562087
+      ToxicFrogPurpleBlue_Idle_5: 47586389
+      ToxicFrogPurpleBlue_Idle_6: -679806152
+      ToxicFrogPurpleBlue_Idle_7: 2067975322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

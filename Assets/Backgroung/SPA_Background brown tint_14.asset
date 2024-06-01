@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Water2
+  m_Name: SPA_Background brown tint_14
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1007292710, guid: c3304000354bfe14c9e2f57e6cee8cdc, type: 3}
+  m_Sprite: {fileID: -2374153, guid: d22f2da293ce0b94fb2bf4fd1faaccd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
