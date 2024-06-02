@@ -113,6 +113,8 @@ public class PlayerMove : MonoBehaviour
             isAlive = false;
             ani.SetTrigger("Dying");
             rb.velocity = new Vector2(0, 0);
+            // xu ly die
+            FindObjectOfType<GameCotroller>().ProcessPlayerDeath();
         }
     }
 }
