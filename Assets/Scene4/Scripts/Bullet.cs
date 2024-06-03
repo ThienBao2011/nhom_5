@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    [SerializeField] float damage = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +18,10 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        EnemyHealth enemy = other.GetComponent<EnemyHealth>();
+        if (enemy != null)
         {
-            Destroy(other.gameObject);
+            enemy.takeDamage(damage);
         }
         Destroy(gameObject);
     }

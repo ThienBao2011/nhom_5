@@ -58,6 +58,9 @@ TagManager:
   - name: Enemy
     uniqueID: 1838952809
     locked: 0
+  - name: trangtrienemy
+    uniqueID: 1418421991
+    locked: 0
   - name: Trap
     uniqueID: 3787000731
     locked: 0

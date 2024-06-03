@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8314978122559551895}
   - component: {fileID: 5272721158251188668}
   - component: {fileID: 4857641596518569072}
+  - component: {fileID: 2903561234516922696}
   m_Layer: 10
   m_Name: Slime Enemy
   m_TagString: Enemy
@@ -32,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30.097754, y: -25.909857, z: -0.040436048}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6985, y: 0.6985, z: 0.6985}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -230,3 +231,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.0001, y: 2.1471977}
   m_EdgeRadius: 0
+--- !u!114 &2903561234516922696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2935908952518381474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb07e0ade8507d4d806d5490fa3b836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0
