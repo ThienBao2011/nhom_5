@@ -21,7 +21,7 @@ TagManager:
   - Trap
   - Bullet
   - Coin
-  - 
+  - interactable
   - 
   - 
   - 
@@ -69,6 +69,9 @@ TagManager:
     locked: 0
   - name: Coin
     uniqueID: 2316505877
+    locked: 0
+  - name: interactable
+    uniqueID: 1948397257
     locked: 0
   - name: Player
     uniqueID: 99074059
