@@ -20,7 +20,7 @@ TagManager:
   - Trap
   - Bullet
   - Interactable
-  - 
+  - Decor
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: Climbing
     uniqueID: 2627124819
+    locked: 0
+  - name: Decor
+    uniqueID: 3671117951
     locked: 0
   - name: Enemy
     uniqueID: 3525231461

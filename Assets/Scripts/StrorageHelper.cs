@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class StrorageHelper
+    public class StorageHelper
     {
         private readonly string filename = "game_data.txt";
         public GameDataPlayed played;
