@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Assets.Scripts;
@@ -26,9 +27,17 @@ public class Finish : MonoBehaviour
             information.SetActive(false);
             var score = FindObjectOfType<GameController>().GetScore();
             // Luu lai thanh tich nguoi choi
-
+            var gameData = new GameData()
+            {
+                score = score,
+                timePlayed = DateTime.Now.ToString("yyyy-MM-dd")
+            };
+            played.plays.Add(gameData);
+            storageHelper.SaveData();
             //tai du lieu trong file hien thi len  bang thanh tich
-
+            storageHelper.LoadData();
+            played = storageHelper.played;
+            Debug.Log("Count: " + played.plays.Count);
             finish.SetActive(true);
         }
     }
