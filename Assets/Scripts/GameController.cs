@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI liveText;
 
+    private int initialScore;
+
     private void Awake()
     {
         var numGameSessions = FindObjectsOfType<GameController>().Length;
@@ -32,6 +34,8 @@ public class GameController : MonoBehaviour
     {
         liveText.text = live.ToString();
         scoreText.text = score.ToString();
+
+        initialScore = score; // Luu diem ban dau khi bat dau game
     }
 
     //Tang diem
@@ -54,6 +58,10 @@ public class GameController : MonoBehaviour
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
         liveText.text = live.ToString();
+
+        //dat lai diem khi mat mang va hoi sinh
+        score = initialScore;
+        scoreText.text = score.ToString();
     }
 
     private void ResetGame()
