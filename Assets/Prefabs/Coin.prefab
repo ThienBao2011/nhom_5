@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 195940493
-  m_SortingLayer: 8
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -1681550727, guid: c6ea6f6648687cf4ab0b1e14905d44a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinValue: 100
   Coin_flip: {fileID: 8300000, guid: 046a068ff489e2c4f92d6bc38b88cab7, type: 3}
+  CoinEffect: {fileID: 2559252132421801047, guid: 2cc5836fe2dc8524789237434f4950c0, type: 3}
 --- !u!58 &4722877645855873941
 CircleCollider2D:
   m_ObjectHideFlags: 0
