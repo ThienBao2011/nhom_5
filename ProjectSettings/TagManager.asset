@@ -76,3 +76,6 @@ TagManager:
   - name: Player
     uniqueID: 99074059
     locked: 0
+  - name: troll
+    uniqueID: 1710069255
+    locked: 0
