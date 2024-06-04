@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,22 +7,21 @@ using System.Threading.Tasks;
 namespace Assets.Scene4.Scripts
 {
     using System.IO;
-    using UnityEditor.Experimental.GraphView;
     using UnityEngine;
     public class StorageManager
     {
-        public static bool SaveToFile(string filename, string json)
+        public static bool SaveToFile(string filenam, string json)
         {
             try
             {
-                var fileStream = new FileStream(filename, FileMode.Create);
+                var fileStream = new FileStream(filenam, FileMode.Create);
                 using (var writer = new StreamWriter(fileStream))
                 {
                     writer.Write(json);
                 }
                 return true;
             }
-            catch (System.Exception e)
+            catch (System.Exception e) 
             {
                 Debug.Log("Error saving file: " + e.Message);
                 return false;
@@ -47,9 +45,9 @@ namespace Assets.Scene4.Scripts
                     return null;
                 }
             }
-            catch (System.Exception e)
+            catch(System.Exception e) 
             {
-                Debug.Log("Error loading file: " + e.Message);
+                Debug.Log("Error loading file: " +e.Message);
                 return null;
             }
         }

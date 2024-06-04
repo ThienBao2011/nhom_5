@@ -19,9 +19,9 @@ public class Coin : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.CompareTag("Player") && !isCollected)
+        if (other.CompareTag("Player") && !isCollected)
         {
             isCollected = true;
             // Tăng điểm

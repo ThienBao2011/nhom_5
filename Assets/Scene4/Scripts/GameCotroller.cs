@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameCotroller : MonoBehaviour
 {
-    [SerializeField] int core = 0;
+    [SerializeField] int score = 0;
     [SerializeField] int live = 4;
-    [SerializeField] TextMeshProUGUI coreText;
+    [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI liveText;
     // Start is called before the first frame update
     private void Awake()
@@ -26,12 +26,12 @@ public class GameCotroller : MonoBehaviour
     void Start()
     {
         liveText.text = live.ToString();
-        coreText.text = core.ToString();
+        scoreText.text = score.ToString();
     }
-    public void AddCore(int coreToAdd)
+    public void AddCore(int scoreToAdd)
     {
-        core += coreToAdd;
-        coreText.text = core.ToString();
+        score += scoreToAdd;
+        scoreText.text = score.ToString();
     }
     private void DecreaseLive()
     {
@@ -58,6 +58,6 @@ public class GameCotroller : MonoBehaviour
     }
     public int GetScore()
     {
-        return core;
+        return score;
     }
 }

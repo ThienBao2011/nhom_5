@@ -13,26 +13,25 @@ namespace Assets.Scene4.Scripts
     {
         private readonly string filename = "game_data.txt";
         public GameDataPlayed played;
-
         public void LoadData()
         {
             played = new GameDataPlayed()
             {
-                plays = new List<GameData>()
-                {
-
-                }
+                plays = new List<GameData>()    
             };
-            // đọc file
-            string dataAsJson = StorageManager.LoadFromFile(filename);
-            if (dataAsJson != null)
+            // đọc chuỗi từ file
+            string dataAsjson = StorageManager.LoadFromFile(filename);
+            if (dataAsjson != null)
             {
-                played = JsonUtility.FromJson<GameDataPlayed>(dataAsJson);
+                // chuyển chuỗi data thành object
+                played = JsonUtility.FromJson<GameDataPlayed>(dataAsjson);
             }
         }
-        public void SaveData()
-        {
+        public void SaveData() 
+        { 
+            // chuyển object sang json
             string dataAsJson = JsonUtility.ToJson(played);
+            // lưu chuỗi json vào file
             StorageManager.SaveToFile(filename, dataAsJson);
         }
     }

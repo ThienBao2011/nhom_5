@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assets.Scene4.Scripts
 {
-    [Serializable]
+    [Serializable] 
+    // lưu trữ thông tin
     public class GameData
     {
         public int score = 0;
