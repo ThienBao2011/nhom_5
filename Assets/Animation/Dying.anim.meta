@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scene4/Animation/Dying.anim.meta
+guid: 88dc1ee0e4126134280ebf5b64032d0c
+=======
 guid: 4795ba0b48f56174393d6360d33e2c18
+>>>>>>> main:Assets/Animation/Dying.anim.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000

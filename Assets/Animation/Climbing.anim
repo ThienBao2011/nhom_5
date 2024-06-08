@@ -21,15 +21,25 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
+<<<<<<< HEAD:Assets/Scene4/Animation/Climbing.anim
+      value: {fileID: -824620154, guid: a4ef3ad2ae1b9d942aa71539c52806a3, type: 3}
+    - time: 0.14285715
+      value: {fileID: -1994857374, guid: a4ef3ad2ae1b9d942aa71539c52806a3, type: 3}
+=======
       value: {fileID: 407854473, guid: 6aadcf8cad14af449b1ad2e2b7cdf30f, type: 3}
     - time: 0.2
       value: {fileID: 2043707577, guid: 6aadcf8cad14af449b1ad2e2b7cdf30f, type: 3}
+>>>>>>> main:Assets/Animation/Climbing.anim
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
+<<<<<<< HEAD:Assets/Scene4/Animation/Climbing.anim
+  m_SampleRate: 7
+=======
   m_SampleRate: 5
+>>>>>>> main:Assets/Animation/Climbing.anim
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -46,14 +56,23 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
+<<<<<<< HEAD:Assets/Scene4/Animation/Climbing.anim
+    - {fileID: -824620154, guid: a4ef3ad2ae1b9d942aa71539c52806a3, type: 3}
+    - {fileID: -1994857374, guid: a4ef3ad2ae1b9d942aa71539c52806a3, type: 3}
+=======
     - {fileID: 407854473, guid: 6aadcf8cad14af449b1ad2e2b7cdf30f, type: 3}
     - {fileID: 2043707577, guid: 6aadcf8cad14af449b1ad2e2b7cdf30f, type: 3}
+>>>>>>> main:Assets/Animation/Climbing.anim
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
+<<<<<<< HEAD:Assets/Scene4/Animation/Climbing.anim
+    m_StopTime: 0.2857143
+=======
     m_StopTime: 0.4
+>>>>>>> main:Assets/Animation/Climbing.anim
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

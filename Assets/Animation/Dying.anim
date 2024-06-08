@@ -21,11 +21,19 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
+<<<<<<< HEAD:Assets/Scene4/Animation/Dying.anim
+      value: {fileID: -323004435, guid: a4ef3ad2ae1b9d942aa71539c52806a3, type: 3}
+    - time: 0.1
+      value: {fileID: 2064456964, guid: a4ef3ad2ae1b9d942aa71539c52806a3, type: 3}
+    - time: 0.2
+      value: {fileID: 1670396294, guid: a4ef3ad2ae1b9d942aa71539c52806a3, type: 3}
+=======
       value: {fileID: 1583137490, guid: 6aadcf8cad14af449b1ad2e2b7cdf30f, type: 3}
     - time: 0.1
       value: {fileID: 1204849868, guid: 6aadcf8cad14af449b1ad2e2b7cdf30f, type: 3}
     - time: 0.2
       value: {fileID: 1322358232, guid: 6aadcf8cad14af449b1ad2e2b7cdf30f, type: 3}
+>>>>>>> main:Assets/Animation/Dying.anim
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,9 +56,15 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
+<<<<<<< HEAD:Assets/Scene4/Animation/Dying.anim
+    - {fileID: -323004435, guid: a4ef3ad2ae1b9d942aa71539c52806a3, type: 3}
+    - {fileID: 2064456964, guid: a4ef3ad2ae1b9d942aa71539c52806a3, type: 3}
+    - {fileID: 1670396294, guid: a4ef3ad2ae1b9d942aa71539c52806a3, type: 3}
+=======
     - {fileID: 1583137490, guid: 6aadcf8cad14af449b1ad2e2b7cdf30f, type: 3}
     - {fileID: 1204849868, guid: 6aadcf8cad14af449b1ad2e2b7cdf30f, type: 3}
     - {fileID: 1322358232, guid: 6aadcf8cad14af449b1ad2e2b7cdf30f, type: 3}
+>>>>>>> main:Assets/Animation/Dying.anim
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

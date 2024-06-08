@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scene4/Prefabs/Bullet.prefab.meta
+guid: fcd66a242be56ef4d8924da80367c256
+=======
 guid: 42550cffd0588b244a506ebd25885fa2
+>>>>>>> main:Assets/Prefabs/Bullet.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

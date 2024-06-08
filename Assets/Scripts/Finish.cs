@@ -1,9 +1,17 @@
+<<<<<<< HEAD:Assets/Scene4/Scripts/Finish.cs
+﻿using Assets.Scene4.Scripts;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
+=======
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
+>>>>>>> main:Assets/Scripts/Finish.cs
 
 public class Finish : MonoBehaviour
 {
@@ -32,7 +40,11 @@ public class Finish : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             information.SetActive(false);
+<<<<<<< HEAD:Assets/Scene4/Scripts/Finish.cs
+            var score = FindObjectOfType<GameCotroller>().GetScore();
+=======
             var score = FindObjectOfType<GameController>().GetScore();
+>>>>>>> main:Assets/Scripts/Finish.cs
             // Luu lai thanh tich nguoi choi
             var gameData = new GameData()
             {
