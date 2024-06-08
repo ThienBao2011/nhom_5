@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
+    [SerializeField] AudioClip creeper;
+
     private Rigidbody2D _rigidbody2D;
     // Start is called before the first frame update
     void Start()
