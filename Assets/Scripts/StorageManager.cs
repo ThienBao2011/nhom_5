@@ -1,23 +1,4 @@
-<<<<<<< HEAD:Assets/Scene4/Scripts/StorageManager.cs
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Assets.Scene4.Scripts
-{
-    using System.IO;
-    using UnityEngine;
-    public class StorageManager
-    {
-        public static bool SaveToFile(string filenam, string json)
-        {
-            try
-            {
-                var fileStream = new FileStream(filenam, FileMode.Create);
-=======
-﻿using System.IO;
+using System.IO;
 using UnityEngine; 
 
 namespace Assets.Scripts
@@ -29,7 +10,6 @@ namespace Assets.Scripts
             try
             {
                 var fileStream = new FileStream(filename, FileMode.Create);
->>>>>>> main:Assets/Scripts/StorageManager.cs
                 using (var writer = new StreamWriter(fileStream))
                 {
                     writer.Write(json);
@@ -42,10 +22,7 @@ namespace Assets.Scripts
                 return false;
             }
         }
-<<<<<<< HEAD:Assets/Scene4/Scripts/StorageManager.cs
-=======
 
->>>>>>> main:Assets/Scripts/StorageManager.cs
         public static string LoadFromFile(string filename)
         {
             try
@@ -64,15 +41,9 @@ namespace Assets.Scripts
                     return null;
                 }
             }
-<<<<<<< HEAD:Assets/Scene4/Scripts/StorageManager.cs
-            catch(System.Exception e) 
-            {
-                Debug.Log("Error loading file: " +e.Message);
-=======
             catch (System.Exception e)
             {
                 Debug.Log("Error loading file: " + e.Message);
->>>>>>> main:Assets/Scripts/StorageManager.cs
                 return null;
             }
         }
