@@ -9,10 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Map 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b63b388ad2520984ea3148acde344bfa
+  - enabled: 1
     path: Assets/Scenes/Map 2.unity
     guid: 523b10cf777012341a76210f36d8ab20
   - enabled: 1
-    path: Assets/Scenes/Map 3.unity
-    guid: 8146ca5e7e114064babfe5c38d52154b
+    path: Assets/Scenes/Map 2.test.unity
+    guid: d620ec1623520dc42ab45d7677151fda
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f8e4332747150a14599f1d1f7fa167b4, type: 2}
