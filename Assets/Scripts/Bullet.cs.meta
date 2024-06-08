@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scene4/Scripts/Bullet.cs.meta
+guid: 79dd5faa1ed450f46b0eb1c94aeb5f1b
+=======
+guid: cfcf4133a0ed3c54bbc16df6fee31a8f
+>>>>>>> main:Assets/Scripts/Bullet.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - gioi_han
   - Enemy
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -20,8 +20,8 @@ TagManager:
   - Enemy
   - Trap
   - Bullet
-  - Coin
-  - interactable
+  - Interactable
+  - Decor
   - 
   - 
   - 
@@ -40,42 +40,33 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Bg
+    uniqueID: 3316384907
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 1982073849
-    locked: 0
-  - name: Watter
-    uniqueID: 3845172485
-    locked: 0
-  - name: Map
-    uniqueID: 283107657
+  - name: Platform
+    uniqueID: 4175639445
     locked: 0
   - name: Climbing
-    uniqueID: 1936364171
+    uniqueID: 2627124819
+    locked: 0
+  - name: Decor
+    uniqueID: 3671117951
     locked: 0
   - name: Enemy
-    uniqueID: 1838952809
-    locked: 0
-  - name: trangtrienemy
-    uniqueID: 1418421991
+    uniqueID: 3525231461
     locked: 0
   - name: Trap
-    uniqueID: 3787000731
+    uniqueID: 3690565103
     locked: 0
   - name: Bullet
-    uniqueID: 2435775187
+    uniqueID: 209506223
     locked: 0
-  - name: Coin
-    uniqueID: 2316505877
-    locked: 0
-  - name: interactable
-    uniqueID: 94408143
+  - name: Interactable
+    uniqueID: 195940493
     locked: 0
   - name: Player
-    uniqueID: 99074059
-    locked: 0
-  - name: troll
-    uniqueID: 1710069255
+    uniqueID: 4116878821
     locked: 0
