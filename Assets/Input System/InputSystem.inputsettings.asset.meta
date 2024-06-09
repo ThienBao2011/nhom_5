@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scene4/Input System/InputSystem.inputsettings.asset.meta
+guid: ba701cb7bafd37543b030da6408c3f43
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+=======
 guid: f8e4332747150a14599f1d1f7fa167b4
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
+>>>>>>> main:Assets/Input System/InputSystem.inputsettings.asset.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

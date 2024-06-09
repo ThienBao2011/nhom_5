@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scene4/Input System.meta
+guid: 12fe3130834d0804b97df9d6cb2fd953
+=======
 guid: 57cabbaa1a60e1945b6ccfc97a0e22ea
+>>>>>>> main:Assets/Input System.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

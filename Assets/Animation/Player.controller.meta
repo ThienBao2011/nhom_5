@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scene4/Animation/Player.controller.meta
+guid: 51e6babd611404e468472e0d5a7f6392
+=======
 guid: a56337ffe95b2754d9e5d4bad6bdb223
+>>>>>>> main:Assets/Animation/Player.controller.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000

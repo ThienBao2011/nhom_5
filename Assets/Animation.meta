@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scene4/Animation.meta
+guid: 067502c3988ad86439514fe0822cd184
+=======
 guid: c1f327d1f43265649b5a815c90ef9080
+>>>>>>> main:Assets/Animation.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

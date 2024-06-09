@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scene4/Prefabs/Coin.prefab.meta
+guid: d55af3f84052ef04bb91096ac503b975
+=======
 guid: 16cab03efbde9a546b2660b04c55b8cc
+>>>>>>> main:Assets/Prefabs/Coin.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
