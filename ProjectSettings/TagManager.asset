@@ -55,6 +55,9 @@ TagManager:
   - name: Decor
     uniqueID: 3671117951
     locked: 0
+  - name: Interactable
+    uniqueID: 195940493
+    locked: 0
   - name: Enemy
     uniqueID: 3525231461
     locked: 0
@@ -63,9 +66,6 @@ TagManager:
     locked: 0
   - name: Bullet
     uniqueID: 209506223
-    locked: 0
-  - name: Interactable
-    uniqueID: 195940493
     locked: 0
   - name: Player
     uniqueID: 4116878821

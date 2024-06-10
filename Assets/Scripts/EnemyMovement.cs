@@ -19,13 +19,13 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _rigidbody2D.velocity = new Vector2(moveSpeed, 0);
+        _rigidbody2D.velocity = new Vector2(x:moveSpeed, y:0);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         moveSpeed *= -1;
         //xoay huong cua quai vat
-        transform.localScale = new Vector2(-(Mathf.Sign(_rigidbody2D.velocity.x)), 1f);
+        transform.localScale = new Vector2(x:-(Mathf.Sign(_rigidbody2D.velocity.x)), y:1f);
     }
 }
