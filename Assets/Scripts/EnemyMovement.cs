@@ -19,7 +19,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _rigidbody2D.velocity = new Vector2(x:moveSpeed, y:0);
+        _rigidbody2D.velocity = new Vector2(x:moveSpeed,y:0);
     }
 
     private void OnTriggerExit2D(Collider2D other)
