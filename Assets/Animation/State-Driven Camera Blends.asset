@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: State-Driven Camera Blends
   m_EditorClassIdentifier: 
   m_CustomBlends:
-  - m_From: Idle Camera
-    m_To: 'Idle Cam '
+  - m_From: Running Camera
+    m_To: Idle Camera
     m_Blend:
       m_Style: 1
       m_Time: 5
@@ -24,8 +24,8 @@ MonoBehaviour:
         m_PreInfinity: 0
         m_PostInfinity: 0
         m_RotationOrder: 0
-  - m_From: Running Camera
-    m_To: Running Cam
+  - m_From: Idle Camera
+    m_To: Running Camera
     m_Blend:
       m_Style: 1
       m_Time: 2
@@ -35,8 +35,8 @@ MonoBehaviour:
         m_PreInfinity: 0
         m_PostInfinity: 0
         m_RotationOrder: 0
-  - m_From: Climbing Camera
-    m_To: 'Climbing Cam '
+  - m_From: '**ANY CAMERA**'
+    m_To: Climbing Camera
     m_Blend:
       m_Style: 1
       m_Time: 0.5
@@ -46,7 +46,7 @@ MonoBehaviour:
         m_PreInfinity: 0
         m_PostInfinity: 0
         m_RotationOrder: 0
-  - m_From: '**ANY CAMERA**'
+  - m_From: Climbing Camera
     m_To: '**ANY CAMERA**'
     m_Blend:
       m_Style: 1
