@@ -23,7 +23,7 @@ TagManager:
   - Interactable
   - Decor
   - Troll
-  - 
+  - Gioi_han
   - 
   - 
   - 
@@ -72,4 +72,7 @@ TagManager:
     locked: 0
   - name: Troll
     uniqueID: 4285826611
+    locked: 0
+  - name: Gioi_han
+    uniqueID: 2348190417
     locked: 0
