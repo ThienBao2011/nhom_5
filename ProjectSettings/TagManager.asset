@@ -22,7 +22,7 @@ TagManager:
   - Bullet
   - Interactable
   - Decor
-  - GioiHan
+  - Troll
   - 
   - 
   - 
@@ -55,11 +55,11 @@ TagManager:
   - name: Decor
     uniqueID: 3671117951
     locked: 0
+  - name: Interactable
+    uniqueID: 195940493
+    locked: 0
   - name: Enemy
     uniqueID: 3525231461
-    locked: 0
-  - name: gioi_han
-    uniqueID: 680497841
     locked: 0
   - name: Trap
     uniqueID: 3690565103
@@ -67,12 +67,9 @@ TagManager:
   - name: Bullet
     uniqueID: 209506223
     locked: 0
-  - name: Interactable
-    uniqueID: 195940493
-    locked: 0
   - name: Player
     uniqueID: 4116878821
     locked: 0
-  - name: troll
-    uniqueID: 1592534969
+  - name: Troll
+    uniqueID: 4285826611
     locked: 0
