@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Coin
+  - Gioi_han
   layers:
   - Default
   - TransparentFX
